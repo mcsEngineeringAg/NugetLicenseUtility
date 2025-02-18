@@ -1,0 +1,36 @@
+{
+	"ProxyURL": "",
+	"ProxySystemAuth": false,
+	"IgnoreSslCertificateErrors": false,
+	"HttpClientTimeout": 10,
+	"AllowedLicenseTypes": [],
+	"ForbiddenLicenseTypes": [],
+	"OutputFileType": "EXCEL",
+	"LicenseMappings": [
+		{
+			"Identifier": "",
+			"ReadLocalLicense": false,
+			"LicenseFile": "",
+			"OriginalLicenseUrl": "http://go.microsoft.com/fwlink/?LinkId=329770",
+			"MappedLicenseUrl": "https://github.com/dotnet/core/blob/main/LICENSE.TXT",
+			"LicenseType": "MIT"
+		},
+		{
+			"MappedLicenseUrl": "https://github.com/dotnet/corefx/blob/master/LICENSE.TXT",
+			"LicenseType": "MIT"
+		},
+		{
+			"MappedLicenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+			"LicenseType": "Apache-2.0"
+		},
+		{
+			"MappedLicenseUrl": "https://www.apache.org/licenses/LICENSE-2.0",
+			"LicenseType": "Apache-2.0"
+		},
+		{
+			"MappedLicenseUrl": "https://github.com/protocolbuffers/protobuf/blob/master/LICENSE",
+			"LicenseType": "BSD-3-Clause"
+		}
+	],
+	"ExcludedPackages": ["Trumpf.*"]
+}

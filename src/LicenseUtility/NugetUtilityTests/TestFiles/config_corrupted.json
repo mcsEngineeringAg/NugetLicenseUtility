@@ -1,0 +1,11 @@
+﻿{
+  "ProxyURL": "",
+  "ProxySystemAuth": false,
+  "IgnoreSslCertificateErrors": false,
+  "HttpClientTimeout": 10,
+  "AllowedLicenseTypes": [ "MIT" ],
+  "ForbiddenLicenseTypes": ["Commercial"],
+  "OutputFileType": "MARKDOWN",
+  "LicenseMappings": [],
+  "ExcludedPackages": []
+}

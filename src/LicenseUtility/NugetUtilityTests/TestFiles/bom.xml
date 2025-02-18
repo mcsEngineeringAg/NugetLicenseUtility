@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" serialNumber="urn:uuid:0b136ec3-c46e-4cd2-9872-c0fe49ac59ff" version="1" xmlns="http://cyclonedx.org/schema/bom/1.5">
+  <metadata>
+    <timestamp>2024-12-16T13:36:37.5906343Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>CycloneDX</vendor>
+        <name>CycloneDX module for .NET</name>
+        <version>3.0.5.0</version>
+      </tool>
+    </tools>
+    <component type="application" bom-ref="FluxCutAdapter@0.0.0">
+      <name>FluxCutAdapter</name>
+      <version>0.0.0</version>
+    </component>
+  </metadata>
+  <components>
+    <component type="library" bom-ref="pkg:nuget/Google.Protobuf@3.27.0">
+      <author>Google Inc.</author>
+      <name>Google.Protobuf</name>
+      <version>3.27.0</version>
+      <description>C# runtime library for Protocol Buffers - Google's data interchange format.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">7C49FE863DC7C0C68E9DAB9377EDC52359A125CB2C601C17E7A359A82329C5B519EF2EF8BA24F8B86021B2B63FA675BA864BE8B91BB302BCC469A417B2040A74</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>BSD-3-Clause</id>
+        </license>
+      </licenses>
+      <copyright>Copyright 2015, Google Inc.</copyright>
+      <purl>pkg:nuget/Google.Protobuf@3.27.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/protocolbuffers/protobuf</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/protocolbuffers/protobuf.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Grpc.AspNetCore@2.66.0">
+      <author>The gRPC Authors</author>
+      <name>Grpc.AspNetCore</name>
+      <version>2.66.0</version>
+      <description>gRPC meta-package for ASP.NET Core</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">5A60D9D4082D233EE6B9163174165799883EBDD8CEBF1A17E7E7AE1FA8A5933500153E15D97E7DA3F0F4D3966F32BF7F347334755B3167F910B624CEA5E179E0</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>Apache-2.0</id>
+        </license>
+      </licenses>
+      <copyright>Copyright 2019 The gRPC Authors</copyright>
+      <purl>pkg:nuget/Grpc.AspNetCore@2.66.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://github.com/grpc/grpc-dotnet</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/grpc/grpc-dotnet.git</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Bcl.AsyncInterfaces@8.0.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Bcl.AsyncInterfaces</name>
+      <version>8.0.0</version>
+      <description>
+        Provides the IAsyncEnumerable&lt;T&gt; and IAsyncDisposable interfaces and helper types for .NET Standard 2.0. This package is not required starting with .NET Standard 2.1 and .NET Core 3.0.
+
+        Commonly Used Types:
+        System.IAsyncDisposable
+        System.Collections.Generic.IAsyncEnumerable
+        System.Collections.Generic.IAsyncEnumerator
+      </description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">79CB0773D94465924CEE4E471D90353D5D8DF842C46AB2C572CB15D9B9FB5D0209A1A88D64392995335C5FE54A00D7C3194440B84C95142711BBB685CB5E9552</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.Bcl.AsyncInterfaces@8.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://dot.net/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/dotnet/runtime</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Microsoft.Extensions.Configuration@8.0.0">
+      <author>Microsoft</author>
+      <name>Microsoft.Extensions.Configuration</name>
+      <version>8.0.0</version>
+      <description>Implementation of key-value pair based configuration for Microsoft.Extensions.Configuration. Includes the memory configuration provider.</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">DA48A8EF3B4CD2A6BEB78008382D9FCCDCDD42FF3A71D9EFC5AC69D4020421294AC95B07CF11520341A69EE241925CD040D49A382DF243E2FA194F6896EF9734</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <id>MIT</id>
+        </license>
+      </licenses>
+      <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+      <purl>pkg:nuget/Microsoft.Extensions.Configuration@8.0.0</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://dot.net/</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://github.com/dotnet/runtime</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Trumpf.FluxServiceAPI@4.2.2">
+      <author>TRUMPF Werkzeugmaschinen SE + Co. KG</author>
+      <name>Trumpf.FluxServiceAPI</name>
+      <version>4.2.2</version>
+      <description>Autogenerated methods from FluxService API json</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">C0CB3F83720DA358A0ED5613352A3B0C7030D3C3FE1318F7F00A6FC73AABE2819F6BE3E320D451642057954EF8F7E2AE5084E2ECD7B7451935306D0BC876BF3A</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+        </license>
+      </licenses>
+      <copyright>TRUMPF Werkzeugmaschinen SE + Co. KG</copyright>
+      <purl>pkg:nuget/Trumpf.FluxServiceAPI@4.2.2</purl>
+      <externalReferences>
+        <reference type="website">
+          <url>https://dev.azure.com/TrumpfCorp/Flux/_git/FluxServiceAPI</url>
+        </reference>
+        <reference type="vcs">
+          <url>https://dev.azure.com/TrumpfCorp/Flux/_git/FluxServiceAPI</url>
+        </reference>
+      </externalReferences>
+    </component>
+    <component type="library" bom-ref="pkg:nuget/Trumpf.Licensing@5.2.0">
+      <author>Q-Core</author>
+      <name>Trumpf.Licensing</name>
+      <version>5.2.0</version>
+      <description>TRUMPF Licensing</description>
+      <scope>required</scope>
+      <hashes>
+        <hash alg="SHA-512">B7AFDDD31C7253C02CA739D7699E78E873FD66480FBB60EDFB56D642270EAB7EF90CEDEA8E222B09704E4C9D6221259223D7492ABAE43362D7DCD6447A1C55AE</hash>
+      </hashes>
+      <licenses>
+        <license>
+          <name>Unknown - See URL</name>
+        </license>
+      </licenses>
+      <copyright>All rights reserved to TRUMPF GmbH + Co. KG, Germany</copyright>
+      <purl>pkg:nuget/Trumpf.Licensing@5.2.0</purl>
+    </component>
+
+  </components>
+  <dependencies>
+    <dependency ref="FluxCutAdapter@0.0.0">
+      <dependency ref="pkg:nuget/Grpc.AspNetCore@2.66.0" />
+      <dependency ref="pkg:nuget/Grpc.AspNetCore.Web@2.66.0" />
+      <dependency ref="pkg:nuget/Serilog.AspNetCore@8.0.3" />
+      <dependency ref="pkg:nuget/Serilog.Enrichers.Thread@4.0.0" />
+      <dependency ref="pkg:nuget/Serilog.Settings.Configuration@8.0.4" />
+      <dependency ref="pkg:nuget/Serilog.Sinks.Async@2.1.0" />
+      <dependency ref="pkg:nuget/Serilog.Sinks.Console@6.0.0" />
+      <dependency ref="pkg:nuget/System.Text.Json@8.0.5" />
+      <dependency ref="pkg:nuget/Trumpf.FluxServiceAPI@4.2.2" />
+      <dependency ref="pkg:nuget/Trumpf.NetCoreUtils@4.0.4" />
+      <dependency ref="pkg:nuget/Trumpf.OseonPublicApi@7.0.3" />
+      <dependency ref="pkg:nuget/Trumpf.TrumpfCoreUtils@2.2.12" />
+    </dependency>
+    <dependency ref="pkg:nuget/Google.Protobuf@3.27.0" />
+    <dependency ref="pkg:nuget/Grpc.AspNetCore.Server.ClientFactory@2.66.0">
+      <dependency ref="pkg:nuget/Grpc.AspNetCore.Server@2.66.0" />
+      <dependency ref="pkg:nuget/Grpc.Net.ClientFactory@2.66.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Grpc.AspNetCore.Server@2.66.0">
+      <dependency ref="pkg:nuget/Grpc.Net.Common@2.66.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Grpc.AspNetCore.Web@2.66.0" />
+    <dependency ref="pkg:nuget/Grpc.AspNetCore@2.66.0">
+      <dependency ref="pkg:nuget/Google.Protobuf@3.27.0" />
+      <dependency ref="pkg:nuget/Grpc.AspNetCore.Server.ClientFactory@2.66.0" />
+      <dependency ref="pkg:nuget/Grpc.Tools@2.66.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Grpc.Core.Api@2.66.0" />
+    <dependency ref="pkg:nuget/Grpc.Net.Client@2.66.0">
+      <dependency ref="pkg:nuget/Grpc.Net.Common@2.66.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Grpc.Net.ClientFactory@2.66.0">
+      <dependency ref="pkg:nuget/Grpc.Net.Client@2.66.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Http@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Grpc.Net.Common@2.66.0">
+      <dependency ref="pkg:nuget/Grpc.Core.Api@2.66.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Grpc.Tools@2.66.0" />
+    <dependency ref="pkg:nuget/Microsoft.Bcl.AsyncInterfaces@8.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Primitives@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Primitives@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.2" />
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Options@8.0.0" />
+      <dependency ref="pkg:nuget/System.Diagnostics.DiagnosticSource@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Diagnostics@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Primitives@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Http@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Diagnostics@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Logging@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Options@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Logging@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Options@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.ObjectPool@6.0.3" />
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Options@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Primitives@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Options@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Primitives@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Extensions.Primitives@8.0.0" />
+    <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+    <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+    <dependency ref="pkg:nuget/Microsoft.OData.Client@8.0.2">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Http@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.OData.Core@8.0.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.OData.Core@8.0.2">
+      <dependency ref="pkg:nuget/Microsoft.Bcl.AsyncInterfaces@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.ObjectPool@6.0.3" />
+      <dependency ref="pkg:nuget/Microsoft.OData.Edm@8.0.2" />
+      <dependency ref="pkg:nuget/Microsoft.Spatial@8.0.2" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.OData.Edm@8.0.2">
+      <dependency ref="pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.6.0" />
+      <dependency ref="pkg:nuget/System.Text.Encodings.Web@4.7.2" />
+      <dependency ref="pkg:nuget/System.Text.Json@8.0.5" />
+    </dependency>
+    <dependency ref="pkg:nuget/Microsoft.Spatial@8.0.2" />
+    <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.3" />
+    <dependency ref="pkg:nuget/Serilog.AspNetCore@8.0.3">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Logging@8.0.0" />
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+      <dependency ref="pkg:nuget/Serilog.Extensions.Hosting@8.0.0" />
+      <dependency ref="pkg:nuget/Serilog.Formatting.Compact@2.0.0" />
+      <dependency ref="pkg:nuget/Serilog.Settings.Configuration@8.0.4" />
+      <dependency ref="pkg:nuget/Serilog.Sinks.Console@6.0.0" />
+      <dependency ref="pkg:nuget/Serilog.Sinks.Debug@2.0.0" />
+      <dependency ref="pkg:nuget/Serilog.Sinks.File@5.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Enrichers.Thread@4.0.0">
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Extensions.Hosting@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.0" />
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+      <dependency ref="pkg:nuget/Serilog.Extensions.Logging@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Extensions.Logging@8.0.0">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Logging@8.0.0" />
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Formatting.Compact@2.0.0">
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Settings.Configuration@8.0.4">
+      <dependency ref="pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0" />
+      <dependency ref="pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.2" />
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Sinks.Async@2.1.0">
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Sinks.Console@6.0.0">
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Sinks.Debug@2.0.0">
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog.Sinks.File@5.0.0">
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Serilog@4.1.0" />
+    <dependency ref="pkg:nuget/System.ComponentModel.Annotations@5.0.0" />
+    <dependency ref="pkg:nuget/System.Configuration.ConfigurationManager@8.0.0">
+      <dependency ref="pkg:nuget/System.Diagnostics.EventLog@8.0.0" />
+      <dependency ref="pkg:nuget/System.Security.Cryptography.ProtectedData@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Diagnostics.DiagnosticSource@8.0.0" />
+    <dependency ref="pkg:nuget/System.Diagnostics.EventLog@8.0.0" />
+    <dependency ref="pkg:nuget/System.Globalization@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.IO@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+      <dependency ref="pkg:nuget/System.Text.Encoding@4.3.0" />
+      <dependency ref="pkg:nuget/System.Threading.Tasks@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Reflection.Primitives@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Reflection@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+      <dependency ref="pkg:nuget/System.IO@4.3.0" />
+      <dependency ref="pkg:nuget/System.Reflection.Primitives@4.3.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Resources.ResourceManager@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+      <dependency ref="pkg:nuget/System.Globalization@4.3.0" />
+      <dependency ref="pkg:nuget/System.Reflection@4.3.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Runtime.CompilerServices.Unsafe@4.6.0" />
+    <dependency ref="pkg:nuget/System.Runtime.Extensions@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Runtime.Numerics@4.3.0">
+      <dependency ref="pkg:nuget/System.Globalization@4.3.0" />
+      <dependency ref="pkg:nuget/System.Resources.ResourceManager@4.3.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+      <dependency ref="pkg:nuget/System.Runtime.Extensions@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Runtime@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Security.Cryptography.ProtectedData@8.0.0" />
+    <dependency ref="pkg:nuget/System.ServiceProcess.ServiceController@4.7.0">
+      <dependency ref="pkg:nuget/System.Diagnostics.EventLog@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Text.Encoding@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/System.Text.Encodings.Web@4.7.2" />
+    <dependency ref="pkg:nuget/System.Text.Json@8.0.5" />
+    <dependency ref="pkg:nuget/System.Threading.Tasks@4.3.0">
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Platforms@1.1.0" />
+      <dependency ref="pkg:nuget/Microsoft.NETCore.Targets@1.1.0" />
+      <dependency ref="pkg:nuget/System.Runtime@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Trumpf.FluxServiceAPI@4.2.2">
+      <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.3" />
+    </dependency>
+    <dependency ref="pkg:nuget/Trumpf.Licensing@5.2.0">
+      <dependency ref="pkg:nuget/System.Configuration.ConfigurationManager@8.0.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Trumpf.NetCoreUtils@4.0.4">
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+      <dependency ref="pkg:nuget/System.Configuration.ConfigurationManager@8.0.0" />
+      <dependency ref="pkg:nuget/System.Runtime.Numerics@4.3.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Trumpf.Oseon.Framework.Security@1.14.0">
+      <dependency ref="pkg:nuget/System.ServiceProcess.ServiceController@4.7.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Trumpf.OseonPublicApi@7.0.3">
+      <dependency ref="pkg:nuget/Microsoft.OData.Client@8.0.2" />
+      <dependency ref="pkg:nuget/Microsoft.OData.Core@8.0.2" />
+      <dependency ref="pkg:nuget/Microsoft.OData.Edm@8.0.2" />
+      <dependency ref="pkg:nuget/Microsoft.Spatial@8.0.2" />
+      <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.3" />
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+      <dependency ref="pkg:nuget/System.ComponentModel.Annotations@5.0.0" />
+      <dependency ref="pkg:nuget/System.Text.Json@8.0.5" />
+      <dependency ref="pkg:nuget/Trumpf.Oseon.Framework.Security@1.14.0" />
+    </dependency>
+    <dependency ref="pkg:nuget/Trumpf.TrumpfCoreUtils@2.2.12">
+      <dependency ref="pkg:nuget/Newtonsoft.Json@13.0.3" />
+      <dependency ref="pkg:nuget/Serilog@4.1.0" />
+      <dependency ref="pkg:nuget/Trumpf.Licensing@5.2.0" />
+      <dependency ref="pkg:nuget/Trumpf.Oseon.Framework.Security@1.14.0" />
+    </dependency>
+  </dependencies>
+</bom>

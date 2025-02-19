@@ -17,6 +17,7 @@ env:
 jobs:
   BuildAndTest:
     name: Build and Test NugetUtility
+    if: ${{ env.isMasterOrReleaseBranch == true }}
     runs-on: $agentImageLinux
     steps:
     - uses: actions/checkout@v2
@@ -26,7 +27,7 @@ jobs:
       run: dotnet build src/LicenseUtility/**/*.csproj -c Release --no-restore -p:Version=${{ env.major }}.${{ env.minor }}.${{ env.patch }}
     - name: Test
       run: dotnet test **/*Tests.csproj -c Release --no-build --collect:"XPlat Code Coverage"
-    - name: NuGet push
-      run: nuget push
-      if: (success() && ($isMasterOrReleaseBranch == true))
+    #- name: NuGet push
+    #  run: nuget push
+    #  if: (success() && ($isMasterOrReleaseBranch == true))
                     

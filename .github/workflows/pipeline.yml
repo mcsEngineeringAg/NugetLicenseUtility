@@ -16,7 +16,7 @@ env:
 jobs:
   BuildAndTest:
     name: Build and Test NugetUtility
-    runs-on: ${{ env.agentImageLinux }}
+    runs-on: $agentImageLinux
     steps:
     - uses: actions/checkout@v2
     - name: Restore

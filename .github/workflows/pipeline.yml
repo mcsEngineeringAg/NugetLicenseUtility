@@ -1,5 +1,4 @@
-#Error (line 21): the step 'git-tag-on-release-task@9' does not have a conversion path yet
-name: ${{ env.major }}.${{ env.minor }}.${{ env.patch }}
+#name: ${{ env.major }}.${{ env.minor }}.${{ env.patch }}
 on:
   push:
     branches:

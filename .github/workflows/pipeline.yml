@@ -5,9 +5,12 @@ on:
     - main
     - release/*
 
+vars:
+  isMasterOrReleaseBranch: $[or(eq(github.ref, 'refs/heads/main'), startsWith(github.ref, 'refs/heads/release'))]
+
 env:
   agentImageLinux: ubuntu-latest
-  isMasterOrReleaseBranch: $[or(eq(github.ref, 'refs/heads/main'), startsWith(github.ref, 'refs/heads/release'))]
+  #isMasterOrReleaseBranch: $[or(eq(github.ref, 'refs/heads/main'), startsWith(github.ref, 'refs/heads/release'))]
   major: 1
   minor: 0
   patch: $[counter(format('{0}.{1}',$major,$minor), 1)]
@@ -17,7 +20,7 @@ env:
 jobs:
   BuildAndTest:
     name: Build and Test NugetUtility
-    if: ${{ env.isMasterOrReleaseBranch == true }}
+    if: ${{ vars.isMasterOrReleaseBranch == true }}
     runs-on: $agentImageLinux
     steps:
     - uses: actions/checkout@v2

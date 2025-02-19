@@ -25,4 +25,5 @@ jobs:
     - name: Build from source
       run: dotnet build ./src/LicenseUtility/LicenseUtility.sln -c Release --no-restore
     - name: Test
-      run: dotnet test **/*Tests.csproj -c Release --no-build --verbosity normal
+      run: dotnet test ./src/LicenseUtility/NugetUtilityTests/NugetUtilityTests.csproj -c Release --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+    

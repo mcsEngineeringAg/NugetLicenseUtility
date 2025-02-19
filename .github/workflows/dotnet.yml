@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ./src/LicenseUtility/**/*.csproj
+      run: dotnet restore ./src/LicenseUtility/LicenseUtility.sln
     - name: Build from source
-      run: dotnet build ./src/LicenseUtility/**/*.csproj -c Release --no-restore
+      run: dotnet build ./src/LicenseUtility/LicenseUtility.sln -c Release --no-restore
     - name: Test
       run: dotnet test **/*Tests.csproj -c Release --no-build --verbosity normal

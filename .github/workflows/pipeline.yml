@@ -10,7 +10,8 @@ env:
   isMasterOrReleaseBranch: $[or(eq(github.ref, 'refs/heads/main'), startsWith(github.ref, 'refs/heads/release'))]
   major: 1
   minor: 0
-  patch: $[counter(format('{0}.{1}',variables['major'],variables['minor']), 1)]
+  patch: $[counter(format('{0}.{1}',$major,$minor), 1)]
+  #patch: $[counter(format('{0}.{1}',variables['major'],variables['minor']), 1)]
 
 
 jobs:
@@ -27,5 +28,5 @@ jobs:
       run: dotnet test **/*Tests.csproj -c Release --no-build --collect:"XPlat Code Coverage"
     - name: NuGet push
       run: nuget push
-      if: (success() && (variables.isMasterOrReleaseBranch == true))
+      if: (success() && ($isMasterOrReleaseBranch == true))
                     

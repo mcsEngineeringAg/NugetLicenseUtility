@@ -1,52 +1,52 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: Release
-
-on:
-  release:
-    types: [published]
-
-env:
-  major: 1
-  minor: 0
-  patch: 0
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore ./src/LicenseUtility/LicenseUtility.sln
-    - name: Build from source
-      run: dotnet build ./src/LicenseUtility/LicenseUtility.sln -c Release --no-restore -p:Version=$major.$minor.$patch
-    - name: Test
-      run: dotnet test ./src/LicenseUtility/NugetUtilityTests/NugetUtilityTests.csproj -c Release --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-    - name: 🏷️ Create/update tag
-      uses: actions/github-script@v7
-      with:
-        script: |
-          github.rest.git.createRef({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            ref: 'refs/tags/${{ env.major }}.${{ env.minor}}.${{ env.patch}}',
-            sha: context.sha
-          }).catch(err => {
-            if (err.status !== 422) throw err;
-            github.rest.git.updateRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: 'tags/${{ env.major }}.${{ env.minor}}.${{ env.patch}}',
-              sha: context.sha
-            });
-          })
-    - name: Push
-      run: dotnet nuget push ./src/LicenseUtility/LicenseUtility/bin/Release/*.nupkg --api-key ${{secrets.GITHUB_TOKEN}} --source https://nuget.pkg.github.com/gutzwillersi/index.json
+#name: Release
+#
+#on:
+#  release:
+#    types: [published]
+#
+#env:
+#  major: 1
+#  minor: 0
+#  patch: 0
+#
+#jobs:
+#  build:
+#
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#    - uses: actions/checkout@v4
+#    - name: Setup .NET
+#      uses: actions/setup-dotnet@v4
+#      with:
+#        dotnet-version: 8.0.x
+#    - name: Restore dependencies
+#      run: dotnet restore ./src/LicenseUtility/LicenseUtility.sln
+#    - name: Build from source
+#      run: dotnet build ./src/LicenseUtility/LicenseUtility.sln -c Release --no-restore -p:Version=$major.$minor.$patch
+#    - name: Test
+#      run: dotnet test ./src/LicenseUtility/NugetUtilityTests/NugetUtilityTests.csproj -c Release --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+#    - name: 🏷️ Create/update tag
+#      uses: actions/github-script@v7
+#      with:
+#        script: |
+#          github.rest.git.createRef({
+#            owner: context.repo.owner,
+#            repo: context.repo.repo,
+#            ref: 'refs/tags/${{ env.major }}.${{ env.minor}}.${{ env.patch}}',
+#            sha: context.sha
+#          }).catch(err => {
+#            if (err.status !== 422) throw err;
+#            github.rest.git.updateRef({
+#              owner: context.repo.owner,
+#              repo: context.repo.repo,
+#              ref: 'tags/${{ env.major }}.${{ env.minor}}.${{ env.patch}}',
+#              sha: context.sha
+#            });
+#          })
+#    - name: Push
+#      run: dotnet nuget push ./src/LicenseUtility/LicenseUtility/bin/Release/*.nupkg --api-key ${{secrets.GITHUB_TOKEN}} --source https://nuget.pkg.github.com/gutzwillersi/index.json
     

@@ -50,5 +50,5 @@ jobs:
             });
           })
     - name: Push
-      run: dotnet nuget push ./src/LicenseUtility/LicenseUtility/bin/Release/*.nupkg --api-key ${{secrets.GITHUB_TOKEN}} --source https://nuget.pkg.github.com/gutzwillersi/index.json
+      run: dotnet nuget push ./src/LicenseUtility/LicenseUtility/bin/Release/*.nupkg --api-key ${{secrets.GITHUB_TOKEN}} --source https://nuget.pkg.github.com/mcsEngineeringAg/index.json
     

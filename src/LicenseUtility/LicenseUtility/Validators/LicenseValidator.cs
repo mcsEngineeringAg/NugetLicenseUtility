@@ -1,4 +1,5 @@
 ﻿using NugetUtility.Configuration;
+using NugetUtility.Model;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;

@@ -40,7 +40,6 @@ namespace NugetUtility
 
             try
             {
-                // Test with bom.xml file
                 var manager = new LicenseManager(settings);
                 var packages = await manager.GetNugetInformationFromBomAsync(bom);
 

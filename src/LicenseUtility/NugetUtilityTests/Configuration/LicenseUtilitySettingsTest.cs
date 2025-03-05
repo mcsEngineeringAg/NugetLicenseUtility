@@ -1,8 +1,4 @@
-﻿//--------------------------------------------------------------------------------------------------
-// All rights reserved to TRUMPF Werkzeugmaschinen SE + Co. KG, Germany
-// -------------------------------------------------------------------------------------------------
-
-using NugetUtility.Configuration;
+﻿using NugetUtility.Configuration;
 
 namespace NugetUtilityTests.Configuration
 {
@@ -99,16 +95,16 @@ namespace NugetUtilityTests.Configuration
         {
             var settings = new LicenseUtilitySettings
             {
-                ExcludedPackages = ["System.*", "Microsoft.Extensions.Logging", "*Trumpf*.**", "Trumpf.Dummy.Logging"]
+                ExcludedPackages = ["System.*", "Microsoft.Extensions.Logging", "*mcs*.**", "mcs.Dummy.Logging"]
             };
 
             var hardExclusions = settings.HardPackageExclusions.ToList();
             var wildcardExclusions = settings.WildcardPackageExclusions.ToList();
 
             Assert.That(hardExclusions, Has.Member("Microsoft.Extensions.Logging"));
-            Assert.That(hardExclusions, Has.Member("Trumpf.Dummy.Logging"));
+            Assert.That(hardExclusions, Has.Member("mcs.Dummy.Logging"));
             Assert.That(wildcardExclusions, Has.Member("System."));
-            Assert.That(wildcardExclusions, Has.Member("Trumpf."));
+            Assert.That(wildcardExclusions, Has.Member("mcs."));
         }
 
         [Test]
@@ -116,13 +112,13 @@ namespace NugetUtilityTests.Configuration
         {
             var settings = new LicenseUtilitySettings
             {
-                ExcludedPackages = ["System.*", "Microsoft.Extensions.Logging", "*Trumpf*.**", "Trumpf.Dummy.Logging"]
+                ExcludedPackages = ["System.*", "Microsoft.Extensions.Logging", "*mcs*.**", "mcs.Dummy.Logging"]
             };
 
-            Assert.That(settings.IsExclusionMatch("Trumpf.Dummy.Logging"), Is.True);
+            Assert.That(settings.IsExclusionMatch("mcs.Dummy.Logging"), Is.True);
             Assert.That(settings.IsExclusionMatch("Microsoft.Extensions.Logging"), Is.True);
             Assert.That(settings.IsExclusionMatch("System.Text.Json"), Is.True);
-            Assert.That(settings.IsExclusionMatch("Tat.Trumpf.CellControl"), Is.True);
+            Assert.That(settings.IsExclusionMatch("Tut.mcs.CellControl"), Is.True);
             Assert.That(settings.IsExclusionMatch("Aldisoft.Messaging"), Is.False);
         }
 

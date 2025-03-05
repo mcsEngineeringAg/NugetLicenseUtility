@@ -1,8 +1,4 @@
-﻿//--------------------------------------------------------------------------------------------------
-// All rights reserved to TRUMPF Werkzeugmaschinen SE + Co. KG, Germany
-// -------------------------------------------------------------------------------------------------
-
-using NugetUtility.Model;
+﻿using NugetUtility.Model;
 
 namespace NugetUtilityTests.Models
 {

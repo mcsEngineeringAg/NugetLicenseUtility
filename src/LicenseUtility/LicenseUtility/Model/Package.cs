@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NugetUtility
+namespace NugetUtility.Model
 {
     [XmlRoot(ElementName = "license")]
     public class License
@@ -126,21 +127,17 @@ namespace NugetUtility
     }
 
 
-    // helper class to ignore namespaces when de-serializing
+    /// <summary>
+    /// Helper class to ignore namespaces when deserializing
+    /// </summary>
     public class NamespaceIgnorantXmlTextReader : XmlTextReader
     {
-        public NamespaceIgnorantXmlTextReader(System.IO.TextReader reader) : base(reader) { }
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="reader"></param>
+        public NamespaceIgnorantXmlTextReader(TextReader reader) : base(reader) { }
 
         public override string NamespaceURI => string.Empty;
     }
-
-    // helper class to omit XML decl at start of document when serializing
-    public class XTWFND : XmlTextWriter
-    {
-        public XTWFND(System.IO.TextWriter w) : base(w) { Formatting = System.Xml.Formatting.Indented; }
-        public override void WriteStartDocument() { }
-    }
-
-
-
 }

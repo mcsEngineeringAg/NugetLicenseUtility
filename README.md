@@ -67,12 +67,12 @@ The `LicenseMappings` entry is a list of mapping objects for example
 			"LicenseType": "MIT"
 		},
 		{
-			"Identifier": "Trumpf.NetCoreUtils",
+			"Identifier": "mcs.NetCoreUtils",
 			"ReadLocalLicense": true,
-			"LicenseFile": "C:\\temp\\TrumpfLicense.txt",
+			"LicenseFile": "C:\\temp\\mcsLicense.txt",
 			"OriginalLicenseUrl": "",
 			"MappedLicenseUrl": "",
-			"LicenseType": "TRUMPF"
+			"LicenseType": "MCS"
 		}
 	]
 ```
@@ -124,12 +124,12 @@ Here is a complete example configuration:
 			"LicenseType": "MIT"
 		},
 		{
-			"Identifier": "Trumpf.NetCoreUtils",
+			"Identifier": "mcs.NetCoreUtils",
 			"ReadLocalLicense": true,
-			"LicenseFile": "C:\\temp\\TrumpfLicense.txt",
+			"LicenseFile": "C:\\temp\\mcsLicense.txt",
 			"OriginalLicenseUrl": "",
 			"MappedLicenseUrl": "",
-			"LicenseType": "TRUMPF"
+			"LicenseType": "MCS"
 		}
 	],
 	"ExcludedPackages": ["System.*", "Microsoft.OData.Edm"]

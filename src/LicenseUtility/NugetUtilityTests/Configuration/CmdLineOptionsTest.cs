@@ -1,7 +1,4 @@
 ﻿//--------------------------------------------------------------------------------------------------
-// All rights reserved to TRUMPF Werkzeugmaschinen SE + Co. KG, Germany
-// -------------------------------------------------------------------------------------------------
-
 using CommandLine;
 using NugetUtility.Configuration;
 

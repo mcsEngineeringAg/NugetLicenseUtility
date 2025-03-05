@@ -1,8 +1,4 @@
-﻿//--------------------------------------------------------------------------------------------------
-// All rights reserved to TRUMPF Werkzeugmaschinen SE + Co. KG, Germany
-// -------------------------------------------------------------------------------------------------
-
-using NugetUtility;
+﻿using NugetUtility.Model;
 using NugetUtility.Validators;
 
 namespace NugetUtilityTests.Validators
@@ -40,7 +36,7 @@ namespace NugetUtilityTests.Validators
             package1.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             package1.Metadata.License.Text = "MIT";
             var package2 = new Package();
-            package2.Metadata.License.Text = "Trumpf";
+            package2.Metadata.License.Text = "mcs";
             var package3 = new Package();
             package3.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             package3.Metadata.License.Text = "MIT";
@@ -48,7 +44,7 @@ namespace NugetUtilityTests.Validators
             Dictionary<string, Package> packages = new()
             {
                 {"Mcs.Package.Test", package1 },
-                {"Trumpf.Boost.Extensions", package2 },
+                {"mcs.Boost.Extensions", package2 },
                 {"Mock.Pack.Utils", package3 }
             };
 
@@ -85,7 +81,7 @@ namespace NugetUtilityTests.Validators
             Dictionary<string, Package> packages = new()
             {
                 {"Mcs.Package.Test", package1 },
-                {"Trumpf.Boost.Extensions", package2 },
+                {"mcs.Boost.Extensions", package2 },
                 {"Mock.Pack.Utils", package3 }
             };
 
@@ -120,7 +116,7 @@ namespace NugetUtilityTests.Validators
             Dictionary<string, Package> packages = new()
             {
                 {"Mcs.Package.Test", package1 },
-                {"Trumpf.Boost.Extensions", package2 },
+                {"mcs.Boost.Extensions", package2 },
                 {"Mock.Pack.Utils", package3 }
             };
 
@@ -149,7 +145,7 @@ namespace NugetUtilityTests.Validators
             package1.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             package1.Metadata.License.Text = "MIT";
             var package2 = new Package();
-            package2.Metadata.License.Text = "Trumpf";
+            package2.Metadata.License.Text = "mcs";
             var package3 = new Package();
             package3.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             package3.Metadata.License.Text = "MIT";
@@ -157,7 +153,7 @@ namespace NugetUtilityTests.Validators
             Dictionary<string, Package> packages = new()
             {
                 {"Mcs.Package.Test", package1 },
-                {"Trumpf.Boost.Extensions", package2 },
+                {"mcs.Boost.Extensions", package2 },
                 {"Mock.Pack.Utils", package3 }
             };
 
@@ -186,7 +182,7 @@ namespace NugetUtilityTests.Validators
             package1.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             package1.Metadata.License.Text = "MIT";
             var package2 = new Package();
-            package2.Metadata.License.Text = "Trumpf";
+            package2.Metadata.License.Text = "mcs";
             var package3 = new Package();
             package3.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             package3.Metadata.License.Text = "Apache-2.0";
@@ -194,7 +190,7 @@ namespace NugetUtilityTests.Validators
             Dictionary<string, Package> packages = new()
             {
                 {"Mcs.Package.Test", package1 },
-                {"Trumpf.Boost.Extensions", package2 },
+                {"mcs.Boost.Extensions", package2 },
                 {"Mock.Pack.Utils", package3 }
             };
 
@@ -223,7 +219,7 @@ namespace NugetUtilityTests.Validators
             package1.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             package1.Metadata.License.Text = "MIT";
             var package2 = new Package();
-            package2.Metadata.License.Text = "Trumpf";
+            package2.Metadata.License.Text = "mcs";
             var package3 = new Package();
             package3.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             package3.Metadata.License.Text = "Apache-1.1";
@@ -231,7 +227,7 @@ namespace NugetUtilityTests.Validators
             Dictionary<string, Package> packages = new()
             {
                 {"Mcs.Package.Test", package1 },
-                {"Trumpf.Boost.Extensions", package2 },
+                {"mcs.Boost.Extensions", package2 },
                 {"Mock.Pack.Utils", package3 }
             };
 
@@ -266,7 +262,7 @@ namespace NugetUtilityTests.Validators
             Dictionary<string, Package> packages = new()
             {
                 {"Mcs.Package.Test", package1 },
-                {"Trumpf.Boost.Extensions", package2 },
+                {"mcs.Boost.Extensions", package2 },
                 {"Mock.Pack.Utils", package3 }
             };
 

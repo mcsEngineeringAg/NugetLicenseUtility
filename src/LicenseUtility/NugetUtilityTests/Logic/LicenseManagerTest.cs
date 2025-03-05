@@ -1,8 +1,4 @@
-﻿//--------------------------------------------------------------------------------------------------
-// All rights reserved to TRUMPF Werkzeugmaschinen SE + Co. KG, Germany
-// -------------------------------------------------------------------------------------------------
-
-using NugetUtility;
+﻿using NugetUtility;
 using NugetUtility.Configuration;
 using NugetUtility.Logic;
 using NugetUtility.Model;
@@ -60,20 +56,20 @@ namespace NugetUtilityTests.Logic
         {
             var mapping = new LicenseMapping()
             {
-                Identifier = "Trumpf.FluxServiceAPI",
+                Identifier = "mcs.FluxServiceAPI",
                 ReadLocalLicense = true,
                 LicenseFile = TestUtility.GetTestFilePath("License.txt"),
-                LicenseType = "TRUMPF"
+                LicenseType = "MCS"
             };
 
-            var nameAndVersion = new PackageNameAndVersion() { Name = "Trumpf.FluxServiceAPI", Version = "4.2.2" };
+            var nameAndVersion = new PackageNameAndVersion() { Name = "mcs.FluxServiceAPI", Version = "4.2.2" };
             var nugetPackage = new Package();
             var settings = new LicenseUtilitySettings() { LicenseMappings = [mapping] };
             var manager = new LicenseManager(settings);
 
             await manager.UpdatePackageLicenseText(nugetPackage, nameAndVersion);
 
-            Assert.That(nugetPackage.Metadata.License.Text, Is.EqualTo("TRUMPF"));
+            Assert.That(nugetPackage.Metadata.License.Text, Is.EqualTo("MCS"));
             Assert.That(nugetPackage.Metadata.License.LicenseText, Is.EqualTo("This is a license text."));
 
         }
@@ -83,13 +79,13 @@ namespace NugetUtilityTests.Logic
         {
             var mapping = new LicenseMapping()
             {
-                Identifier = "Trumpf.FluxServiceAPI",
+                Identifier = "mcs.FluxServiceAPI",
                 ReadLocalLicense = false,
                 MappedLicenseUrl = "https://opensource.org/licenses/MIT",
                 LicenseType = "MIT"
             };
 
-            var nameAndVersion = new PackageNameAndVersion() { Name = "Trumpf.FluxServiceAPI", Version = "4.2.2" };
+            var nameAndVersion = new PackageNameAndVersion() { Name = "mcs.FluxServiceAPI", Version = "4.2.2" };
             var nugetPackage = new Package();
             var settings = new LicenseUtilitySettings() { LicenseMappings = [mapping] };
             var manager = new LicenseManager(settings);
@@ -111,7 +107,7 @@ namespace NugetUtilityTests.Logic
                 LicenseType = "MIT"
             };
 
-            var nameAndVersion = new PackageNameAndVersion() { Name = "Trumpf.FluxServiceAPI", Version = "4.2.2" };
+            var nameAndVersion = new PackageNameAndVersion() { Name = "mcs.FluxServiceAPI", Version = "4.2.2" };
             var nugetPackage = new Package();
             nugetPackage.Metadata.LicenseUrl = "http://licenses/deprecated/MIT";
             var settings = new LicenseUtilitySettings() { LicenseMappings = [mapping] };
@@ -127,7 +123,7 @@ namespace NugetUtilityTests.Logic
         [Test]
         public async Task PackageLicense_Generic_Url()
         {
-            var nameAndVersion = new PackageNameAndVersion() { Name = "Trumpf.FluxServiceAPI", Version = "4.2.2" };
+            var nameAndVersion = new PackageNameAndVersion() { Name = "mcs.FluxServiceAPI", Version = "4.2.2" };
             var nugetPackage = new Package();
             nugetPackage.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             nugetPackage.Metadata.License.Text = "MIT";
@@ -144,7 +140,7 @@ namespace NugetUtilityTests.Logic
         [Test]
         public async Task PackageLicense_Generic_Url_NotFound()
         {
-            var nameAndVersion = new PackageNameAndVersion() { Name = "Trumpf.FluxServiceAPI", Version = "4.2.2" };
+            var nameAndVersion = new PackageNameAndVersion() { Name = "mcs.FluxServiceAPI", Version = "4.2.2" };
             var nugetPackage = new Package();
             nugetPackage.Metadata.LicenseUrl = "https://opensource.org/licenses/MITTER";
             nugetPackage.Metadata.License.Text = "MIT";
@@ -165,7 +161,7 @@ namespace NugetUtilityTests.Logic
                 MappedLicenseUrl = "https://opensource.org/licenses/MIT",
                 LicenseType = "MIT"
             };
-            var nameAndVersion = new PackageNameAndVersion() { Name = "Trumpf.FluxServiceAPI", Version = "4.2.2" };
+            var nameAndVersion = new PackageNameAndVersion() { Name = "mcs.FluxServiceAPI", Version = "4.2.2" };
             var nugetPackage = new Package();
             nugetPackage.Metadata.LicenseUrl = "https://opensource.org/licenses/MIT";
             var settings = new LicenseUtilitySettings() { LicenseMappings = [mapping] };

@@ -16,12 +16,12 @@
 			"LicenseType": "MIT"
 		},
 		{
-			"Identifier": "Trumpf.NetCoreUtils",
+			"Identifier": "mcs.NetCoreUtils",
 			"ReadLocalLicense": true,
-			"LicenseFile": "C:\\temp\\TrumpfLicense.txt",
+			"LicenseFile": "C:\\temp\\mcsLicense.txt",
 			"OriginalLicenseUrl": "",
 			"MappedLicenseUrl": "",
-			"LicenseType": "TRUMPF"
+			"LicenseType": "MCS"
 		}
 	],
 	"ExcludedPackages": [ "System.*", "Microsoft.OData.Edm" ]
